@@ -27,7 +27,7 @@ Also ...
     Stein schleift Schere
 
     Falls du noch mehr hilfe brauchst schreib einfach "help"
-    FaLLs du kein bock mehr hast screib einfach "exit"
+    FaLLs du kein bock mehr hast schreib einfach "exit"
 
 
 Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem Spiel an.
@@ -165,7 +165,8 @@ while (True):
         break
 
     elif inpu == ("help"):
-         print(commandlist)
+        print("")
+        print(commandlist)
 
     inpu = inpu.capitalize()
     randomoutput = randomoutput.capitalize()
@@ -190,6 +191,7 @@ while (True):
         print(drawmessage)
 
 #play again 
+    print("")
     playagain = input("Willst du nochmal spielen ? ")
     playagain = playagain.lower()
 
@@ -198,7 +200,9 @@ while (True):
     elif playagain == ("nein"):
         break
     else:
-        print("PlaceholderText")
+        print("")
+        print("Probiere es nochmal")
+        print("")
         
 
 print("")        
