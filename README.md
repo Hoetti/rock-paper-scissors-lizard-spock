@@ -5,3 +5,6 @@ In this little Python script I tried to remake the BBT version of rock paper sci
 If you haven't noticed yet its in German because  I am from Germany and speak german native. If you read this i'll probably be already on a add on to do it in english.
 Best regards 
 Hoetti
+
+(I helped a litlle :D)
+Pvp-man51
