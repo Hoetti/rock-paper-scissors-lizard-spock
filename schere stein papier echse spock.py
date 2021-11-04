@@ -27,14 +27,15 @@ Also ...
     Stein schleift Schere
 
     Falls du noch mehr hilfe brauchst schreib einfach "help"
+    FaLLs du kein bock mehr hast screib einfach "exit"
 
 
 Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem Spiel an.
 
 Also, ... """
 winsmessage = "Du hast scheinbar gewonnen ... Naja egal, herzlichen Glückwunsch und noch viel spaß =)"
-losemessage = "Oh wie's aussieht hast du scheinbar verloren :/ ... naja probiers gerne nochmal (du musst nur 'again' eingbeben =D)"
-drawmessage = "Unentschieden ! Probiers doch gerne mit 'again' nochmal =)"
+losemessage = "Oh wie's aussieht hast du scheinbar verloren gegen mich verloren >=D ... naja probiers gerne nochmal =)"
+drawmessage = "Unentschieden ! Probiers doch gerne mit nochmal =)"
 commandlist = ["help: shows all comands",
 "exit: leaves rounds",
 "rules: opens game rules",
@@ -172,8 +173,9 @@ while (True):
 #result output
     
     #User input and bt output
-    print("Dein Zug: " + inpu)
-    print("Der Zug des Computers: " + randomoutput)
+    if(inpu == st or inpu == sc or inpu == pa or inpu == ec or inpu == sp):
+        print("Dein Zug: " + inpu)
+        print("Der Zug des Computers: " + randomoutput)
     
     #win
     if wins > 0:
@@ -189,15 +191,20 @@ while (True):
 
 #play again 
     playagain = input("Willst du nochmal spielen ? ")
-    playagain =playagain.lower()
+    playagain = playagain.lower()
 
     if playagain == ("ja"):
         print()
     elif playagain == ("nein"):
         break
-        
+    else:
+        print("PlaceholderText")
         
 
-print(wins)
-print(loses)
-print(draws)   
+print("")        
+print("Wins", wins)
+print("")
+print("Loses", loses)
+print("")
+print("Draws", draws)
+print("")
