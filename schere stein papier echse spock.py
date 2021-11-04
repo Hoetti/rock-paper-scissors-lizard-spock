@@ -9,9 +9,11 @@ sp = "spock"
 randomlist = ['schere', 'stein',  'papier', 'echse', 'spock']
 
 errormessage = "Entschuldigung aber dieses Handzeichen kenne ich nicht :/"
-welcomemessage = """Hallo und Herzlich willkommen zu 'Schere, Stein, Papier, Echse, Spock' aus der Serie 'The Big Bang Theory'. 
+welcomemessage = """Hallo und Herzlich willkommen zu 'Schere, Stein, Papier, Echse, Spock' aus der Serie 'The Big Bang Theory'.
 Ich hoffe dir gefällt es! 
+
 Hier vorab noch mal die Regeln:
+
 Also ...     
     Schere schneidet Papier         
     Papier bedeckt Stein                
@@ -24,8 +26,12 @@ Also ...
     Spock verdampft Stein
     Stein schleift Schere
 
+    Falls du noch mehr hilfe brauchst schreib einfach "help"
 
-Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem Spiel an. Also, ... """
+
+Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem Spiel an.
+
+Also, ... """
 winsmessage = "Du hast scheinbar gewonnen ... Naja egal, herzlichen Glückwunsch und noch viel spaß =)"
 losemessage = "Oh wie's aussieht hast du scheinbar verloren :/ ... naja probiers gerne nochmal (du musst nur 'again' eingbeben =D)"
 drawmessage = "Unentschieden ! Probiers doch gerne mit 'again' nochmal =)"
@@ -194,5 +200,4 @@ while (True):
 
 print(wins)
 print(loses)
-print(draws)
-        
+print(draws)   
