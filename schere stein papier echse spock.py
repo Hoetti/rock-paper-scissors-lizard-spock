@@ -26,8 +26,8 @@ Also ...
     Spock verdampft Stein
     Stein schleift Schere
 
-    Falls du noch mehr hilfe brauchst schreib einfach "help"
-    FaLLs du kein bock mehr hast schreib einfach "exit"
+    Falls du noch mehr hilfe brauchst schreib einfach "help".
+    Für den Fall, keine Lust mehr hast schreib einfach "exit".
 
 
 Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem Spiel an.
