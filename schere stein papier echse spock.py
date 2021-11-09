@@ -177,6 +177,8 @@ while (True):
     if(inpu == st or inpu == sc or inpu == pa or inpu == ec or inpu == sp):
         print("Dein Zug: " + inpu)
         print("Der Zug des Computers: " + randomoutput)
+    elif (not (inpu == st or inpu == sc or inpu == pa or inpu == ec or inpu == sp or inpu == "help" or inpu == "exit")):
+        print(errormessage)
     
     #win
     if wins > 0:
