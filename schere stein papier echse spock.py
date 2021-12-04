@@ -35,13 +35,13 @@ Da wir dies nun hoffentlich erledigt haben, fangen wir am besten direkt mit dem 
 Also, ... """
 winsmessage = "Du hast scheinbar gewonnen ... Naja egal, herzlichen Glückwunsch und noch viel spaß =)"
 losemessage = "Oh wie's aussieht hast du scheinbar verloren gegen mich verloren >=D ... naja probiers gerne nochmal =)"
-drawmessage = "Unentschieden ! Probiers doch gerne mit nochmal =)"
+drawmessage = "Unentschieden ! Probiers doch gerne nochmal =)"
 commandlist = ["help: shows all comands",
 "exit: leaves rounds",
 "rules: opens game rules",
 ]
 
-input_error = True
+
 
 #welcome message
 print(welcomemessage)
@@ -60,6 +60,9 @@ while (True):
     wins = 0
     loses = 0
     draws = 0
+
+# input error definition
+    input_error = True
 
 #scissors query
     if inpu == sc:
@@ -188,7 +191,7 @@ while (True):
     if input_error == False:
         print("Dein Zug: " + inpu)
         print("Der Zug des Computers: " + randomoutput)
-    elif input_error == True:
+    if input_error == True:
         print(errormessage)
     
     #win
