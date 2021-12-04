@@ -41,6 +41,7 @@ commandlist = ["help: shows all comands",
 "rules: opens game rules",
 ]
 
+input_error = True
 
 #welcome message
 print(welcomemessage)
@@ -79,6 +80,8 @@ while (True):
         elif randomoutput == sc:
             draws +=1
         
+    #correctivity check
+        input_error = False
 
 #stone query
     elif inpu == st:
@@ -99,6 +102,8 @@ while (True):
         elif randomoutput == st:
             draws +=1
         
+    #correctivity check
+        input_error = False
 
 #paper query
     elif inpu == pa:
@@ -139,6 +144,8 @@ while (True):
         elif randomoutput == ec:
             draws +=1
         
+    #correctivity check
+        input_error = False
 
 #spock query
     elif inpu == sp:
@@ -158,6 +165,9 @@ while (True):
     #draws
         elif randomoutput == sp:
             draws +=1
+    
+    #correctivity check
+        input_error = False
         
 
 #commands
@@ -171,13 +181,14 @@ while (True):
     inpu = inpu.capitalize()
     randomoutput = randomoutput.capitalize()
 
+    print("")
 #result output
     
     #User input and bt output
-    if(inpu == st or inpu == sc or inpu == pa or inpu == ec or inpu == sp):
+    if input_error == False:
         print("Dein Zug: " + inpu)
         print("Der Zug des Computers: " + randomoutput)
-    elif (not (inpu == st or inpu == sc or inpu == pa or inpu == ec or inpu == sp or inpu == "help" or inpu == "exit")):
+    elif input_error == True:
         print(errormessage)
     
     #win
@@ -192,8 +203,11 @@ while (True):
     elif draws > 0:
         print(drawmessage)
 
-#play again 
     print("")
+
+
+#play again 
+    '''print("")
     playagain = input("Willst du nochmal spielen ? ")
     playagain = playagain.lower()
 
@@ -201,10 +215,13 @@ while (True):
         print()
     elif playagain == ("nein"):
         break
+    elif playagain == ("exit"):
+        break
     else:
         print("")
         print("Probiere es nochmal")
-        print("")
+        print("") '''
+    
 
 #loop ending
         
