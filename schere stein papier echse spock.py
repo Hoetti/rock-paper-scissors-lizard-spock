@@ -126,7 +126,9 @@ while (True):
     #draws
         elif randomoutput == pa:
             draws +=1
-        
+
+    #correctivity check
+        input_error = False
 
 #lizard query
     elif inpu == ec:
@@ -229,10 +231,10 @@ while (True):
 #loop ending
         
 
-print("")        
+'''print("")        
 print("Wins", wins)
 print("")
 print("Loses", loses)
 print("")
 print("Draws", draws)
-print("")
+print("")'''
