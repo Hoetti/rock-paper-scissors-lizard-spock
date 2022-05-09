@@ -6,8 +6,3 @@ If you haven't noticed yet its in German because  I am from Germany and speak ge
 Best regards 
 
 Hoetti
-
-
-
-(I helped a little 🧀)
-Pvp-man51
